@@ -1,0 +1,32 @@
+GET http://localhost:3001/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTJ9LCJpYXQiOjE2MTI0ODQ3MzIsImV4cCI6MTYxMjQ4NTAzMiwiYXVkIjoiMTIifQ.f9fvLYHGbaVka5ecxuYHguTCEh2vHiGAUgkpDktZjz4
+###Login Route
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "email": "kacper@gmail.com",
+  "password": "Haslo123"
+}
+
+
+###Register Route
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+  "email": "kacper@gmail.com",
+  "password": "Haslo123",
+  "name": "Kacper Kedzierski"
+}
+
+###Refresh token Route
+POST http://localhost:3001/auth/refresh-token
+Content-Type: application/json
+
+
+
+###Logout Route
+DELETE http://localhost:3001/auth/logout
+Content-Type: application/json
+
